@@ -20,7 +20,7 @@ app.post('/call', twilio.webhook(config.TWILIO_AUTH_TOKEN), function(request, re
     response.send(twiml)
   } else {
     var twiml = new twilio.TwimlResponse();
-    twiml.say('Thank you for using Q! Your personal summarization assistant has now been activated.');
+    // twiml.say('Thank you for using Q! Your personal summarization assistant has now been activated.');
     twiml.record({ 
       playBeep : false,
     });
